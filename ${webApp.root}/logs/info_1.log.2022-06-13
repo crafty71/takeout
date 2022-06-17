@@ -1,0 +1,981 @@
+[11:06:39:516] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 12484 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[11:06:39:521] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[11:06:40:078] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:06:40:081] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11:06:40:102] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[11:06:40:304] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11:06:40:639] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[11:06:40:647] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[11:06:40:648] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[11:06:40:648] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11:06:40:725] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[11:06:40:726] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1166 ms
+[11:06:41:304] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[11:06:41:801] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[11:06:41:817] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[11:06:41:819] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.517 seconds (JVM running for 3.648)
+[11:07:08:721] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11:07:08:721] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[11:07:08:732] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 11 ms
+[11:07:08:814] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[11:07:08:815] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[11:07:08:815] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:07:08:817] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[11:07:08:817] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@1732f2cc]
+[11:07:08:867] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[11:07:09:062] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[11:07:09:176] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[11:07:14:751] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/page
+[11:07:14:751] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[11:07:14:752] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:07:14:752] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminController.page
+[11:07:14:752] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[11:07:14:834] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":5,"list":[{"id":1,"name":"管理员","username":"admin","password":"SMRMN9k6YmXAjbsJCMdxrQ==","phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2},{"id":2,"name":"小张","username":"张华","password":"123456","phone":"13893101587","sex":"2","idNumber":"110101199001010047","status":1,"createTime":1654855794000,"updateTime":1654878862000,"createUser":1,"updateUser":1,"roles":1},{"id":3,"name":"小张1","username":"张华1","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654872418000,"updateTime":1654872418000,"createUser":1,"updateUser":1,"roles":1},{"id":4,"name":"小张2","username":"张华2","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654872551000,"updateTime":1654872551000,"createUser":1,"updateUser":1,"roles":1},{"id":5,"name":"小张","username":"张华7","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"13893101583","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654875937000,"updateTime":1654875937000,"createUser":1,"updateUser":1,"roles":1}],"pageNum":1,"pageSize":10,"size":5,"startRow":1,"endRow":5,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[11:31:36:635] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[11:31:36:641] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[11:31:36:770] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[11:31:43:482] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 20912 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[11:31:43:485] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[11:31:43:975] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:31:43:978] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11:31:43:998] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[11:31:44:194] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11:31:44:533] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[11:31:44:551] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[11:31:44:551] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[11:31:44:552] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11:31:44:628] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[11:31:44:628] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1112 ms
+[11:31:45:338] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[11:31:45:989] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[11:31:46:007] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[11:31:46:009] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.754 seconds (JVM running for 4.048)
+[11:34:04:561] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11:34:04:561] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[11:34:04:568] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[11:34:09:240] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[11:34:09:241] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[11:34:09:241] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:34:09:243] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[11:34:09:243] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@642c2b63]
+[11:34:09:270] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[11:34:09:373] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[11:34:09:453] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[11:34:18:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/employeeDetail
+[11:34:18:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[11:34:18:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:34:18:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminController.selectEmployeeById
+[11:34:18:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1]
+[11:34:18:522] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : null
+[11:34:44:504] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[11:34:44:505] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[11:34:44:509] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[11:34:50:160] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 15260 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[11:34:50:163] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[11:34:50:679] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:34:50:681] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11:34:50:699] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[11:34:50:892] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11:34:51:194] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[11:34:51:202] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[11:34:51:202] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[11:34:51:203] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11:34:51:281] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[11:34:51:282] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1080 ms
+[11:34:51:900] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[11:34:52:407] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[11:34:52:431] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[11:34:52:433] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.549 seconds (JVM running for 3.78)
+[11:35:03:629] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11:35:03:630] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[11:35:03:634] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[11:35:07:416] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[11:35:07:416] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[11:35:07:416] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:35:07:417] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[11:35:07:417] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@67fa71ee]
+[11:35:07:441] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[11:35:07:514] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[11:35:07:577] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[11:35:09:467] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/employeeDetail
+[11:35:09:467] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[11:35:09:467] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:35:09:467] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminController.selectEmployeeById
+[11:35:09:467] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1]
+[11:35:09:475] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":"SMRMN9k6YmXAjbsJCMdxrQ==","phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[11:35:17:421] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/employeeDetail
+[11:35:17:421] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[11:35:17:421] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[11:35:17:421] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminController.selectEmployeeById
+[11:35:17:421] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [5]
+[11:35:17:425] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":5,"name":"小张","username":"张华7","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"13893101583","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654875937000,"updateTime":1654875937000,"createUser":1,"updateUser":1,"roles":1}}
+[12:01:29:585] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:01:29:592] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[12:01:29:635] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[12:01:35:233] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 908 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[12:01:35:238] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:01:35:900] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:01:35:904] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[12:01:35:928] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[12:01:36:158] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[12:01:36:545] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[12:01:36:553] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[12:01:36:553] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:01:36:554] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[12:01:36:631] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:01:36:632] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1352 ms
+[12:01:37:457] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[12:01:38:208] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[12:01:38:233] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[12:01:38:236] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 3.335 seconds (JVM running for 4.37)
+[12:03:03:442] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[12:03:03:442] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[12:03:03:450] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
+[12:03:09:163] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[12:03:09:163] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[12:03:09:163] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[12:03:09:164] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[12:03:09:164] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@2d2efa53]
+[12:03:09:195] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[12:03:09:303] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[12:03:09:389] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[12:03:11:565] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[12:03:11:565] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[12:03:11:565] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[12:03:11:565] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[12:03:11:565] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[12:03:11:700] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":0,"list":[],"pageNum":1,"pageSize":10,"size":0,"startRow":0,"endRow":0,"pages":0,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[],"navigateFirstPage":0,"navigateLastPage":0}}
+[14:31:26:484] [WARN] - com.zaxxer.hikari.pool.HikariPool$HouseKeeper.run(HikariPool.java:787) - imooc_mall_datasource - Thread starvation or clock leap detected (housekeeper delta=2h6m16s774ms210µs800ns).
+[14:32:55:425] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:32:55:429] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[14:32:55:434] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[14:33:00:204] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 22788 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[14:33:00:206] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:33:00:652] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[14:33:00:654] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[14:33:00:674] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[14:33:00:879] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[14:33:01:336] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[14:33:01:344] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[14:33:01:345] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:33:01:355] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:33:01:435] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:33:01:435] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1200 ms
+[14:33:02:027] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:33:02:552] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[14:33:02:569] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[14:33:02:570] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.577 seconds (JVM running for 4.079)
+[14:33:08:135] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:33:08:135] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:33:08:141] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[14:33:11:810] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[14:33:11:810] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[14:33:11:811] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[14:33:11:811] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[14:33:11:811] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@5a5b2e6]
+[14:33:11:840] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:33:11:931] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:33:12:003] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[14:33:14:731] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[14:33:14:731] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[14:33:14:731] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[14:33:14:731] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[14:33:14:731] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[14:34:04:803] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:34:04:804] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[14:34:04:807] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[14:34:10:562] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 3624 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[14:34:10:566] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:34:11:193] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[14:34:11:196] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[14:34:11:217] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[14:34:11:456] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[14:34:11:845] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[14:34:11:853] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[14:34:11:854] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:34:11:854] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:34:11:929] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:34:11:929] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1308 ms
+[14:34:12:569] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:34:13:110] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[14:34:13:128] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[14:34:13:130] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.843 seconds (JVM running for 4.363)
+[14:34:18:339] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:34:18:339] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:34:18:346] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[14:34:20:615] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[14:34:20:615] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[14:34:20:615] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[14:34:20:616] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[14:34:20:616] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@140b1ca2]
+[14:34:20:647] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:34:20:716] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:34:20:779] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[14:34:23:411] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[14:34:23:411] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[14:34:23:411] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[14:34:23:411] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[14:34:23:411] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[14:34:23:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":7,"list":[{"id":1397844263642378242,"type":1,"name":"湘菜","sort":1,"createTime":1622078218000,"updateTime":1626351923000,"createUser":1,"updateUser":1},{"id":1397844303408574465,"type":1,"name":"川菜","sort":2,"createTime":1622078227000,"updateTime":1622615242000,"createUser":1,"updateUser":1},{"id":1397844391040167938,"type":1,"name":"粤菜","sort":3,"createTime":1622078248000,"updateTime":1625812633000,"createUser":1,"updateUser":1},{"id":1413341197421846529,"type":1,"name":"饮品","sort":11,"createTime":1625801775000,"updateTime":1625812755000,"createUser":1,"updateUser":1},{"id":1413342269393674242,"type":2,"name":"商务套餐","sort":5,"createTime":1625802030000,"updateTime":1625813025000,"createUser":1,"updateUser":1},{"id":1413384954989060097,"type":1,"name":"主食","sort":12,"createTime":1625812207000,"updateTime":1625812759000,"createUser":1,"updateUser":1},{"id":1413386191767674881,"type":2,"name":"儿童套餐","sort":6,"createTime":1625812502000,"updateTime":1625812745000,"createUser":1,"updateUser":1}],"pageNum":1,"pageSize":10,"size":7,"startRow":1,"endRow":7,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[16:04:23:579] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[16:04:23:606] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[16:04:23:651] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[16:56:38:434] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 8004 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[16:56:38:444] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:56:39:482] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[16:56:39:491] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[16:56:39:539] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+[16:56:39:863] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[16:56:40:538] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[16:56:40:551] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[16:56:40:552] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:56:40:552] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:56:40:659] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:56:40:660] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 2130 ms
+[16:56:42:464] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[16:56:43:232] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[16:56:43:253] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[16:56:43:255] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 5.228 seconds (JVM running for 6.658)
+[16:57:00:810] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:57:00:810] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:57:00:816] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[16:57:06:055] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[16:57:06:056] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[16:57:06:056] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[16:57:06:057] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[16:57:06:057] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@6161dd13]
+[16:57:06:085] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:57:06:200] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:57:06:312] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[16:57:09:858] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[16:57:09:858] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[16:57:09:858] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[16:57:09:858] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[16:57:09:858] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[16:57:09:941] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":7,"list":[{"id":1397844263642378242,"type":1,"name":"湘菜","sort":1,"createTime":1622078218000,"updateTime":1626351923000,"createUser":1,"updateUser":1},{"id":1397844303408574465,"type":1,"name":"川菜","sort":2,"createTime":1622078227000,"updateTime":1622615242000,"createUser":1,"updateUser":1},{"id":1397844391040167938,"type":1,"name":"粤菜","sort":3,"createTime":1622078248000,"updateTime":1625812633000,"createUser":1,"updateUser":1},{"id":1413341197421846529,"type":1,"name":"饮品","sort":11,"createTime":1625801775000,"updateTime":1625812755000,"createUser":1,"updateUser":1},{"id":1413342269393674242,"type":2,"name":"商务套餐","sort":5,"createTime":1625802030000,"updateTime":1625813025000,"createUser":1,"updateUser":1},{"id":1413384954989060097,"type":1,"name":"主食","sort":12,"createTime":1625812207000,"updateTime":1625812759000,"createUser":1,"updateUser":1},{"id":1413386191767674881,"type":2,"name":"儿童套餐","sort":6,"createTime":1625812502000,"updateTime":1625812745000,"createUser":1,"updateUser":1}],"pageNum":1,"pageSize":10,"size":7,"startRow":1,"endRow":7,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[17:26:41:462] [WARN] - com.zaxxer.hikari.pool.HikariPool$HouseKeeper.run(HikariPool.java:787) - imooc_mall_datasource - Thread starvation or clock leap detected (housekeeper delta=4m34s734ms587µs800ns).
+[18:43:32:386] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[18:43:32:486] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[18:43:32:683] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[19:29:42:148] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 18200 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[19:29:42:152] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[19:29:42:907] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[19:29:42:910] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[19:29:42:938] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[19:29:43:185] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[19:29:43:622] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[19:29:43:638] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[19:29:43:640] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[19:29:43:641] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[19:29:43:754] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[19:29:43:755] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1537 ms
+[19:29:44:063] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[19:29:44:068] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[19:31:31:302] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 9512 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[19:31:31:305] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[19:31:31:824] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[19:31:31:827] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[19:31:32:033] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+[19:31:32:288] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[19:31:32:654] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[19:31:32:679] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[19:31:32:680] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[19:31:32:680] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[19:31:32:767] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[19:31:32:767] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1434 ms
+[19:31:33:046] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[19:31:33:051] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[19:54:44:378] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 17824 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[19:54:44:381] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[19:54:44:892] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[19:54:44:894] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[19:54:44:914] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[19:54:45:094] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[19:54:45:397] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[19:54:45:415] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[19:54:45:416] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[19:54:45:416] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[19:54:45:482] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[19:54:45:482] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1068 ms
+[19:54:45:690] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[19:54:45:694] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:14:33:984] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 5060 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:14:33:987] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:14:34:470] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:14:34:472] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:14:34:491] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[20:14:34:693] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:14:35:154] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:14:35:165] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:14:35:166] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:14:35:166] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:14:35:256] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:14:35:256] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1237 ms
+[20:14:35:508] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:14:35:513] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:17:04:632] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 3032 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:17:04:635] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:17:05:053] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:17:05:056] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:17:05:071] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[20:17:05:260] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:17:05:516] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:17:05:522] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:17:05:522] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:17:05:522] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:17:05:583] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:17:05:584] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 921 ms
+[20:18:50:256] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 20608 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:18:50:260] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:18:50:882] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:18:50:884] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:18:50:908] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[20:18:51:157] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:18:51:486] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:18:51:494] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:18:51:495] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:18:51:495] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:18:51:572] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:18:51:573] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1264 ms
+[20:18:51:831] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:18:51:835] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:19:23:920] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 1536 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:19:23:924] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:19:24:632] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:19:24:636] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:19:24:659] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[20:19:24:921] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:19:25:292] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:19:25:300] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:19:25:301] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:19:25:301] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:19:25:390] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:19:25:391] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1424 ms
+[20:19:25:707] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:19:25:712] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:22:33:324] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 24812 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:22:33:328] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:22:33:952] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:22:33:956] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:22:33:981] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[20:22:34:216] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:22:34:555] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:22:34:563] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:22:34:563] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:22:34:564] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:22:34:641] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:22:34:642] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1270 ms
+[20:22:34:888] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:22:34:892] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:26:25:066] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 22160 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:26:25:070] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:26:25:665] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:26:25:668] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:26:25:694] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[20:26:25:973] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:26:26:342] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:26:26:350] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:26:26:351] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:26:26:351] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:26:26:425] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:26:26:425] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1316 ms
+[20:26:26:644] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:26:26:650] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[20:29:52:031] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 26516 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[20:29:52:034] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[20:29:52:559] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[20:29:52:562] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[20:29:52:580] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[20:29:52:776] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[20:29:53:070] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[20:29:53:076] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[20:29:53:077] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[20:29:53:078] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[20:29:53:147] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[20:29:53:147] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1076 ms
+[20:29:53:358] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[20:29:53:362] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[21:51:51:468] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 2696 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[21:51:51:472] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[21:51:52:147] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[21:51:52:153] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[21:51:52:190] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[21:51:52:466] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[21:51:52:925] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[21:51:52:939] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[21:51:52:940] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[21:51:52:940] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[21:51:53:045] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[21:51:53:046] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1518 ms
+[21:51:53:309] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[21:51:53:313] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[22:01:32:245] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 4784 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:01:32:248] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:01:32:771] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:01:32:774] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:01:32:794] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:01:33:017] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:01:33:315] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:01:33:322] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:01:33:323] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:01:33:323] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:01:33:403] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:01:33:404] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1123 ms
+[22:01:34:133] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:01:34:827] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:01:34:849] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:01:34:851] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.862 seconds (JVM running for 4.029)
+[22:02:14:934] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:02:14:934] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:02:14:944] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
+[22:02:20:935] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:02:20:935] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:02:20:936] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:02:20:937] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:02:20:937] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@6820bc8c]
+[22:03:19:496] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:03:25:796] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 7752 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:03:25:800] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:03:26:337] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:03:26:340] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:03:26:359] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:03:26:563] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:03:26:929] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:03:26:937] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:03:26:938] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:03:26:939] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:03:27:025] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:03:27:026] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1191 ms
+[22:03:27:682] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:03:28:208] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:03:28:252] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:03:28:254] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.688 seconds (JVM running for 3.847)
+[22:03:33:292] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:03:33:292] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:03:33:298] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[22:03:33:347] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:03:33:347] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:03:33:347] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:03:33:348] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:03:33:348] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@15ee1ac3]
+[22:03:33:403] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:03:33:580] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:03:33:722] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:03:37:006] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[22:03:37:006] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[22:03:37:006] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:03:37:006] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[22:03:37:006] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[22:03:37:174] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":7,"list":[{"id":1397844263642378242,"type":1,"name":"湘菜","sort":1,"updateTime":1626351923000,"createUser":1,"updateUser":1},{"id":1397844303408574465,"type":1,"name":"川菜","sort":2,"updateTime":1622615242000,"createUser":1,"updateUser":1},{"id":1397844391040167938,"type":1,"name":"粤菜","sort":3,"updateTime":1625812633000,"createUser":1,"updateUser":1},{"id":1413341197421846529,"type":1,"name":"饮品","sort":11,"updateTime":1625812755000,"createUser":1,"updateUser":1},{"id":1413342269393674242,"type":2,"name":"商务套餐","sort":5,"updateTime":1625813025000,"createUser":1,"updateUser":1},{"id":1413384954989060097,"type":1,"name":"主食","sort":12,"updateTime":1625812759000,"createUser":1,"updateUser":1},{"id":1413386191767674881,"type":2,"name":"儿童套餐","sort":6,"updateTime":1625812745000,"createUser":1,"updateUser":1}],"pageNum":1,"pageSize":10,"size":7,"startRow":1,"endRow":7,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[22:07:57:969] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:07:57:969] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:07:57:969] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:07:57:969] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:07:57:969] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [com.crafty.takeout.model.request.CategoryAddReq@5ef959ae, org.apache.catalina.session.StandardSessionFacade@15ee1ac3]
+[22:08:26:237] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:08:26:237] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:08:26:237] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:08:26:237] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:08:26:237] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [com.crafty.takeout.model.request.CategoryAddReq@1d5540d4, org.apache.catalina.session.StandardSessionFacade@15ee1ac3]
+[22:09:02:859] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:09:02:860] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:09:02:860] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:09:02:860] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:09:02:860] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [com.crafty.takeout.model.request.CategoryAddReq@ac1ab69, org.apache.catalina.session.StandardSessionFacade@15ee1ac3]
+[22:09:28:212] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:09:28:213] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:09:28:217] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:09:33:867] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 24740 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:09:33:869] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:09:34:412] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:09:34:415] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:09:34:433] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:09:34:620] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:09:34:925] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:09:34:933] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:09:34:933] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:09:34:934] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:09:35:018] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:09:35:019] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1015 ms
+[22:09:35:658] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:09:36:215] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:09:36:233] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:09:36:235] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 3.088 seconds (JVM running for 4.066)
+[22:09:53:932] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:09:53:932] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:09:53:937] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[22:10:01:297] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:10:01:297] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:10:01:297] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:10:01:298] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:10:01:298] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@1514bab5]
+[22:10:01:350] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:10:01:437] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:10:01:504] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:10:04:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:10:04:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:10:04:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:10:04:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:10:04:463] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [com.crafty.takeout.model.request.CategoryAddReq@1fb3fda1, org.apache.catalina.session.StandardSessionFacade@1514bab5]
+[22:10:38:562] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:10:38:563] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:10:38:567] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:10:43:747] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 5532 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:10:43:750] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:10:44:173] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:10:44:175] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:10:44:192] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[22:10:44:363] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:10:44:628] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:10:44:645] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:10:44:645] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:10:44:646] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:10:44:705] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:10:44:706] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 927 ms
+[22:10:45:248] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:10:45:701] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:10:45:717] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:10:45:719] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.191 seconds (JVM running for 3.159)
+[22:11:05:544] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:11:05:544] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:11:05:550] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[22:11:05:591] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:11:05:591] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:11:05:591] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:11:05:592] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:11:05:592] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@245b774b]
+[22:11:05:617] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:11:05:709] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:11:05:785] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:11:11:092] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:11:11:092] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:11:11:092] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:11:11:092] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:11:11:092] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674955, type=2, name='成人套餐', sort=6}, org.apache.catalina.session.StandardSessionFacade@245b774b]
+[22:11:55:943] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:11:55:943] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:11:55:947] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:12:00:784] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 14276 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:12:00:787] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:12:01:220] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:12:01:222] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:12:01:238] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:12:01:417] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:12:01:684] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:12:01:689] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:12:01:690] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:12:01:690] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:12:01:751] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:12:01:751] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 936 ms
+[22:12:02:298] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:12:02:787] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:12:02:804] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:12:02:806] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.239 seconds (JVM running for 3.139)
+[22:12:26:927] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:12:26:927] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:12:26:933] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[22:12:26:978] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:12:26:978] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:12:26:978] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:12:26:979] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:12:26:979] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@498ce69f]
+[22:12:27:004] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:12:27:082] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:12:27:149] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:12:30:349] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:12:30:349] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:12:30:349] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:12:30:350] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:12:30:350] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674955, type=2, name='成人套餐', sort=6}, org.apache.catalina.session.StandardSessionFacade@498ce69f]
+[22:13:03:022] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:13:03:022] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:13:03:026] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:13:07:664] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 13876 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:13:07:666] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:13:08:107] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:13:08:109] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:13:08:126] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[22:13:08:305] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:13:08:593] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:13:08:600] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:13:08:601] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:13:08:601] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:13:08:671] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:13:08:671] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 974 ms
+[22:13:09:221] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:13:09:688] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:13:09:706] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:13:09:708] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.276 seconds (JVM running for 3.256)
+[22:13:14:595] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:13:14:595] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:13:14:600] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[22:13:14:643] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:13:14:643] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:13:14:643] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:13:14:644] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:13:14:644] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@1a8a0477]
+[22:13:14:668] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:13:14:741] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:13:14:809] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:13:17:101] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:13:17:101] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:13:17:101] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:13:17:101] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:13:17:101] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674955, type=2, name='成人套餐', sort=6}, org.apache.catalina.session.StandardSessionFacade@1a8a0477]
+[22:13:17:176] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1413386191767674955,"type":2,"name":"成人套餐","sort":6,"updateTime":1655129597000,"createUser":1,"updateUser":1}}
+[22:31:55:781] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:31:55:789] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:31:55:823] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:32:02:182] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 16584 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:32:02:185] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:32:02:678] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:32:02:681] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:32:02:702] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:32:02:898] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:32:03:197] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:32:03:204] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:32:03:205] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:32:03:205] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:32:03:269] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:32:03:270] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1046 ms
+[22:32:03:882] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:32:04:425] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:32:04:443] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:32:04:445] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.534 seconds (JVM running for 3.876)
+[22:32:43:560] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:32:50:001] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 16976 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:32:50:005] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:32:50:620] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:32:50:624] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:32:50:644] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:32:50:858] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:32:51:147] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:32:51:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:32:51:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:32:51:171] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:32:51:255] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:32:51:255] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1203 ms
+[22:32:51:862] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:32:52:423] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:32:52:441] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:32:52:443] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.761 seconds (JVM running for 4.003)
+[22:33:46:237] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:33:51:412] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 25304 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:33:51:417] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:33:51:981] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:33:51:984] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:33:52:005] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:33:52:261] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:33:52:580] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:33:52:587] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:33:52:588] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:33:52:588] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:33:52:679] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:33:52:679] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1217 ms
+[22:33:53:335] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:33:53:863] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:33:53:881] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:33:53:883] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.798 seconds (JVM running for 3.869)
+[22:35:37:118] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:35:37:118] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:35:37:131] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 13 ms
+[22:35:42:143] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:35:42:143] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:35:42:143] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:35:42:145] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:35:42:145] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@501b682a]
+[22:35:42:194] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:35:42:343] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:35:42:513] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:36:10:492] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/update
+[22:36:10:492] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :PUT
+[22:36:10:492] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:36:10:493] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.updateCategory
+[22:36:10:493] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674955, type=2, name='成人套餐一', sort=6}, org.apache.catalina.session.StandardSessionFacade@501b682a]
+[22:36:10:555] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1413386191767674955,"type":2,"name":"成人套餐一","sort":6,"updateTime":1655130971000,"createUser":1,"updateUser":1}}
+[22:37:40:211] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:37:40:212] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:37:40:216] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:37:45:458] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 6712 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:37:45:462] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:37:46:014] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:37:46:017] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:37:46:037] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:37:46:244] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:37:46:552] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:37:46:559] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:37:46:560] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:37:46:561] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:37:46:648] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:37:46:648] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1146 ms
+[22:37:47:269] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:37:47:861] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:37:47:894] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:37:47:896] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.698 seconds (JVM running for 3.92)
+[22:37:55:664] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:37:55:664] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:37:55:671] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[22:37:55:729] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:37:55:729] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:37:55:729] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:37:55:730] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:37:55:730] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@3cf641ab]
+[22:37:55:757] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:37:55:835] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:37:55:913] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:37:58:951] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/update
+[22:37:58:951] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :PUT
+[22:37:58:951] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:37:58:951] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.updateCategory
+[22:37:58:951] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674955, type=2, name='成人套餐一', sort=6}, org.apache.catalina.session.StandardSessionFacade@3cf641ab]
+[22:37:59:018] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1413386191767674955,"type":2,"name":"成人套餐一","sort":6,"createTime":1655129597000,"updateTime":1655131079000,"createUser":1,"updateUser":1}}
+[22:38:11:782] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/list
+[22:38:11:782] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[22:38:11:782] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:38:11:782] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.getCategoryList
+[22:38:11:783] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[22:38:11:828] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":8,"list":[{"id":1397844263642378242,"type":1,"name":"湘菜","sort":1,"createTime":1622078218000,"updateTime":1626351923000,"createUser":1,"updateUser":1},{"id":1397844303408574465,"type":1,"name":"川菜","sort":2,"createTime":1622078227000,"updateTime":1622615242000,"createUser":1,"updateUser":1},{"id":1397844391040167938,"type":1,"name":"粤菜","sort":3,"createTime":1622078248000,"updateTime":1625812633000,"createUser":1,"updateUser":1},{"id":1413341197421846529,"type":1,"name":"饮品","sort":11,"createTime":1625801775000,"updateTime":1625812755000,"createUser":1,"updateUser":1},{"id":1413342269393674242,"type":2,"name":"商务套餐","sort":5,"createTime":1625802030000,"updateTime":1625813025000,"createUser":1,"updateUser":1},{"id":1413384954989060097,"type":1,"name":"主食","sort":12,"createTime":1625812207000,"updateTime":1625812759000,"createUser":1,"updateUser":1},{"id":1413386191767674881,"type":2,"name":"儿童套餐","sort":6,"createTime":1625812502000,"updateTime":1625812745000,"createUser":1,"updateUser":1},{"id":1413386191767674955,"type":2,"name":"成人套餐一","sort":6,"createTime":1655129597000,"updateTime":1655131079000,"createUser":1,"updateUser":1}],"pageNum":1,"pageSize":10,"size":8,"startRow":1,"endRow":8,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[22:38:22:372] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/page
+[22:38:22:372] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :GET
+[22:38:22:373] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:38:22:373] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminController.page
+[22:38:22:373] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1, 10]
+[22:38:22:386] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"total":5,"list":[{"id":1,"name":"管理员","username":"admin","password":"SMRMN9k6YmXAjbsJCMdxrQ==","phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2},{"id":2,"name":"小张","username":"张华","password":"123456","phone":"13893101587","sex":"2","idNumber":"110101199001010047","status":1,"createTime":1654855794000,"updateTime":1654878862000,"createUser":1,"updateUser":1,"roles":1},{"id":3,"name":"小张1","username":"张华1","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654872418000,"updateTime":1654872418000,"createUser":1,"updateUser":1,"roles":1},{"id":4,"name":"小张2","username":"张华2","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654872551000,"updateTime":1654872551000,"createUser":1,"updateUser":1,"roles":1},{"id":5,"name":"小张","username":"张华7","password":"N4JZ0mcDxCItyYP9LPjnyg==","phone":"13893101583","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1654875937000,"updateTime":1654875937000,"createUser":1,"updateUser":1,"roles":1}],"pageNum":1,"pageSize":10,"size":5,"startRow":1,"endRow":5,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1}}
+[22:44:47:572] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:44:47:573] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:44:47:577] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:44:52:989] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 17288 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:44:52:992] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:44:53:483] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:44:53:485] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:44:53:503] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:44:53:683] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:44:53:999] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:44:54:007] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:44:54:007] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:44:54:008] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:44:54:081] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:44:54:082] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1047 ms
+[22:44:54:807] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:44:55:328] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:44:55:354] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:44:55:356] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.58 seconds (JVM running for 3.632)
+[22:46:03:544] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:46:03:545] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:46:03:550] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[22:46:08:483] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:46:08:483] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:46:08:483] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:46:08:484] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:46:08:484] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@4cedd512]
+[22:46:08:515] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:46:08:628] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:46:08:700] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:46:14:073] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:46:14:073] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:46:14:073] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:46:14:073] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:46:14:073] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674956, type=2, name='测试', sort=6}, org.apache.catalina.session.StandardSessionFacade@4cedd512]
+[22:46:14:120] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1413386191767674956,"type":2,"name":"测试","sort":6,"createTime":1655131574000,"updateTime":1655131574000,"createUser":1,"updateUser":1}}
+[22:47:38:644] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:47:38:645] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:47:38:648] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:47:44:709] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 11468 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:47:44:713] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:47:45:249] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:47:45:252] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:47:45:275] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[22:47:45:484] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:47:45:784] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:47:45:792] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:47:45:792] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:47:45:793] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:47:45:862] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:47:45:862] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1110 ms
+[22:47:46:472] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:47:46:997] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:47:47:016] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:47:47:018] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.589 seconds (JVM running for 3.845)
+[22:49:38:655] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:49:43:735] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 26088 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:49:43:738] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:49:44:181] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:49:44:183] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:49:44:200] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:49:44:376] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:49:44:619] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:49:44:625] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:49:44:626] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:49:44:626] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:49:44:713] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:49:44:713] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 936 ms
+[22:49:45:248] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:49:45:694] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:49:45:709] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:49:45:711] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.229 seconds (JVM running for 3.17)
+[22:50:08:919] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:50:08:919] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:50:08:925] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[22:50:12:568] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:50:12:569] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:50:12:569] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:50:12:569] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:50:12:570] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@352b5005]
+[22:50:12:601] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:50:12:737] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:50:12:822] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:53:15:694] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:53:15:695] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:53:15:700] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:53:21:039] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 3584 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:53:21:042] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:53:21:590] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:53:21:593] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:53:21:614] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:53:21:848] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:53:22:158] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:53:22:166] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:53:22:167] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:53:22:167] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:53:22:254] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:53:22:254] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1171 ms
+[22:53:22:899] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:53:23:437] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:53:23:457] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:53:23:459] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.694 seconds (JVM running for 4.682)
+[22:53:31:964] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:53:31:964] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:53:31:969] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[22:53:35:283] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:53:35:284] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:53:35:284] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:53:35:284] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:53:35:285] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@41185a9d]
+[22:53:35:333] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:53:35:840] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:53:36:094] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:53:58:313] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:53:58:314] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:53:58:320] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:54:03:760] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 3912 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:54:03:764] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:54:04:352] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:54:04:358] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:54:04:383] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[22:54:04:595] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:54:04:937] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:54:04:945] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:54:04:946] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:54:04:946] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:54:05:016] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:54:05:017] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1216 ms
+[22:54:05:680] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:54:06:205] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:54:06:223] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:54:06:225] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.747 seconds (JVM running for 3.84)
+[22:54:14:110] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:54:14:110] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:54:14:116] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[22:54:57:227] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:55:01:720] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 2012 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:55:01:727] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:55:02:195] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:55:02:197] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:55:02:213] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[22:55:02:386] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:55:02:665] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:55:02:671] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:55:02:671] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:55:02:672] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:55:02:739] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:55:02:739] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 969 ms
+[22:55:03:293] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:55:03:763] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:55:03:778] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:55:03:779] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.289 seconds (JVM running for 3.212)
+[22:55:15:665] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:55:15:665] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:55:15:672] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[22:55:19:444] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:55:19:444] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:55:19:444] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:55:19:445] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:55:19:445] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@37bcbec5]
+[22:55:19:471] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:55:19:543] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:55:19:615] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:55:22:911] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/delete
+[22:55:22:911] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :DELETE
+[22:55:22:911] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:55:22:911] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.deleteCategory
+[22:55:22:911] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1413386191767674956]
+[22:57:36:752] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:57:36:753] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - imooc_mall_datasource - Shutdown initiated...
+[22:57:36:757] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - imooc_mall_datasource - Shutdown completed.
+[22:57:42:925] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 16004 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:57:42:928] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:57:43:529] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:57:43:532] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:57:43:550] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[22:57:43:780] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:57:44:084] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:57:44:093] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:57:44:093] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:57:44:094] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:57:44:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:57:44:170] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1201 ms
+[22:57:44:989] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:57:45:539] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:57:45:557] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:57:45:558] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.93 seconds (JVM running for 4.104)
+[22:58:14:973] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208) - Shutting down ExecutorService 'applicationTaskExecutor'
+[22:58:19:505] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting TakeoutApplication on LAPTOP-MUVFRCB0 with PID 24716 (D:\mini\IOC\takeout\target\classes started by admin in D:\mini\IOC\takeout)
+[22:58:19:510] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[22:58:19:981] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:246) - Multiple Spring Data modules found, entering strict repository configuration mode!
+[22:58:19:983] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+[22:58:19:999] [INFO] - org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:184) - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+[22:58:20:184] [INFO] - org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[22:58:20:470] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8080 (http)
+[22:58:20:478] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8080"]
+[22:58:20:478] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[22:58:20:478] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[22:58:20:547] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[22:58:20:547] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 989 ms
+[22:58:21:312] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+[22:58:21:810] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8080"]
+[22:58:21:828] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8080 (http) with context path ''
+[22:58:21:829] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started TakeoutApplication in 2.604 seconds (JVM running for 3.497)
+[22:58:23:117] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[22:58:23:117] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[22:58:23:122] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[22:58:29:197] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/login
+[22:58:29:198] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:58:29:198] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:58:29:198] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.EmployeeController.login
+[22:58:29:199] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [admin, 12345678, org.apache.catalina.session.StandardSessionFacade@6bc14f33]
+[22:58:29:225] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[22:58:29:297] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[22:58:29:367] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1,"name":"管理员","username":"admin","password":null,"phone":"13812312312","sex":"1","idNumber":"110101199001010047","status":1,"createTime":1620292807000,"updateTime":1620584649000,"createUser":1,"updateUser":1,"roles":2}}
+[22:58:32:924] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/delete
+[22:58:32:925] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :DELETE
+[22:58:32:925] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:58:32:925] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.deleteCategory
+[22:58:32:925] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1413386191767674956]
+[22:58:32:979] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":null}
+[22:58:52:724] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/delete
+[22:58:52:724] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :DELETE
+[22:58:52:724] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:58:52:724] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.deleteCategory
+[22:58:52:724] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1413386191767674956]
+[22:58:59:547] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/add
+[22:58:59:547] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :POST
+[22:58:59:547] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:58:59:547] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.addCategory
+[22:58:59:547] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [CategoryAddReq{id=1413386191767674956, type=2, name='测试', sort=6}, org.apache.catalina.session.StandardSessionFacade@6bc14f33]
+[22:58:59:574] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":{"id":1413386191767674956,"type":2,"name":"测试","sort":6,"createTime":1655132340000,"updateTime":1655132340000,"createUser":1,"updateUser":1}}
+[22:59:05:768] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:40) - URL : http://127.0.0.1:8080/admin/category/delete
+[22:59:05:768] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:41) - HTTP_METHOD :DELETE
+[22:59:05:768] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:42) - IP : 127.0.0.1
+[22:59:05:768] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:43) - CLASS_METHOD : com.crafty.takeout.controller.AdminCategoryController.deleteCategory
+[22:59:05:768] [INFO] - com.crafty.takeout.filter.WebLogAspect.doBefore(WebLogAspect.java:45) - ARGS : [1413386191767674956]
+[22:59:05:781] [INFO] - com.crafty.takeout.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:51) - RESPONSE : {"status":200,"msg":"SUCCESS","data":null}
